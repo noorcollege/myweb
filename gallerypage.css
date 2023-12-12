@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,18.5vw);
+    grid-template-rows: repeat(7,10vw);
+    grid-gap:10px
+}
+
+.container div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container div{
+    border: 1px solid rgb(52, 184, 184);
+    animation: colorchange infinite 3s;
+}
+
+@keyframes colorchange{
+    from{
+        border: 1px solid rgb(52, 184, 184);
+    }
+
+    to{
+        border: 1px solid rgb(117, 31, 134);
+    }
+}
+
+
+.one{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.two{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.three{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+.four{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.five{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.six{
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+
+.seven{
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.eight{
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.nine{
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.ten{
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
